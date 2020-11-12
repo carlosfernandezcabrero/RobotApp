@@ -67,12 +67,28 @@ public class Pedido {
 
     private double getPrecioTotal(){
         double precioTotal = 0;
-
+        int descuento;
+        double descuentoDouble;
+        
         for (Robot i : listaRobots){
             precioTotal += i.getPrecioVenta();
         }
+        
+        descuento = listaRobots.size() / 5;
+        
+        if (descuento > 5) {
+        	descuento = 5;
+        }
+        
+        descuentoDouble = descuento;
 
-        return precioTotal;
+        precioTotal = precioTotal * ((10 - descuentoDouble) / 10);
+        
+        if (premieum) {
+        	precioTotal *= 0.85;
+        }
+
+        return Math.round(precioTotal * 100.0)/100.0;
     }
 
     public String getIdPedido() {

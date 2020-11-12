@@ -97,6 +97,7 @@ class Principal {
 		robot1.agregarSensor(sensorInfrarrojos1);
 		robot1.agregarSensor(sensorInfrarrojos2);
 		robot1.agregarSensor(sensorLDR1);
+		robot1.agregarSensor(sensorPresion);
 		try {
 			robot1.agregarSensor(sensorLDR2);
 		} catch ( RequireUniqueLDRSensor e ) {
@@ -123,6 +124,18 @@ class Principal {
 			System.out.println("ERROR: " + e.getMessage());
 		}
 		
+		Robot robot4 = new Robot();
+		robot4.setIdentificador("8468-RB");
+		
+		Robot robot5 = new Robot();
+		robot5.setIdentificador("8469-RB");
+		
+		Robot robot6 = new Robot();
+		robot6.setIdentificador("8470-RB");
+		
+		Robot robot7 = new Robot();
+		robot7.setIdentificador("8471-RB");
+		
 		Pedido pedido1 = new Pedido();
 		pedido1.setDireccionEnvio("C/ Avenida del paraiso 7");
 		pedido1.setFecha(Calendar.getInstance());
@@ -130,14 +143,22 @@ class Principal {
 		pedido1.setIdPedido("18290-FK");
 		pedido1.setPremieum(true);
 		pedido1.agregarRobots(robot1);
+		pedido1.agregarRobots(robot4);
+		pedido1.agregarRobots(robot5);
+		pedido1.agregarRobots(robot6);
+		pedido1.agregarRobots(robot7);
 		
 		Pedido pedido2 = new Pedido();
 		pedido2.setDireccionEnvio("C/ Desengaño 21");
 		pedido2.setFecha(Calendar.getInstance());
 		pedido2.setIdCliente("26098");
 		pedido2.setIdPedido("18291-FK");
-		pedido2.setPremieum(true);
+		pedido2.setPremieum(false);
 		pedido2.agregarRobots(robot3);
+		pedido2.agregarRobots(robot4);
+		pedido2.agregarRobots(robot5);
+		pedido2.agregarRobots(robot6);
+		pedido2.agregarRobots(robot7);
 		
 		// USO DE LOS OBJETOS
 		// PEDIDO 1
@@ -194,6 +215,12 @@ class Principal {
 		robot1.eliminarSensor(sensorCCD.getCodigoSensor());
 		System.out.println("Comprobando que se elimino correctamente:");
 		robot1.buscarSensor(sensorCCD.getCodigoSensor());
+		
+		System.out.println();
+		System.out.println("Borrando el robot con identificador " + robot1.getIdentificador() + " del pedido con identificador " + pedido1.getIdPedido() + " ...");
+		pedido1.eliminarRobot(robot1.getIdentificador());
+		System.out.println("Comprobando que se elimino correctamente:");
+		pedido1.buscarRobot(robot1.getIdentificador());
 	}
 
 }
