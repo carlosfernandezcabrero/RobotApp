@@ -1,6 +1,6 @@
-package models.tipoSensores;
+package robotapp.models.tipoSensores;
 
-import models.Sensor;
+import robotapp.models.Sensor;
 
 public class LDR extends Sensor {
 	
@@ -27,6 +27,11 @@ public class LDR extends Sensor {
 
     public void setSensibilidadLDR(SensibilidadLDR sensibilidad) {
         this.sensibilidad = sensibilidad;
+    }
+    
+    public void printInfo(){
+    	super.printInfo();
+    	System.out.println("Sensibilidad: " + this.sensibilidad.getSensibilidad());
     }
     
     @Override

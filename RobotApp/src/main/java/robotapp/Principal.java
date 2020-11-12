@@ -1,17 +1,18 @@
+package robotapp;
 import java.util.Calendar;
 
-import exceptions.RequireUniqueDistanceSensor;
-import exceptions.RequireUniqueLDRSensor;
-import models.Pedido;
-import models.Robot;
-import models.tipoSensores.CCD;
-import models.tipoSensores.Infrarrojos;
-import models.tipoSensores.LDR;
-import models.tipoSensores.LDR.SensibilidadLDR;
-import models.tipoSensores.Obstaculos.SensibilidadObstaculo;
-import models.tipoSensores.Obstaculos;
-import models.tipoSensores.Presion;
-import models.tipoSensores.Ultrasonido;
+import robotapp.exceptions.RequireUniqueDistanceSensor;
+import robotapp.exceptions.RequireUniqueLDRSensor;
+import robotapp.models.Pedido;
+import robotapp.models.Robot;
+import robotapp.models.tipoSensores.CCD;
+import robotapp.models.tipoSensores.Infrarrojos;
+import robotapp.models.tipoSensores.LDR;
+import robotapp.models.tipoSensores.LDR.SensibilidadLDR;
+import robotapp.models.tipoSensores.Obstaculos.SensibilidadObstaculo;
+import robotapp.models.tipoSensores.Obstaculos;
+import robotapp.models.tipoSensores.Presion;
+import robotapp.models.tipoSensores.Ultrasonido;
 
 class Principal {
 
@@ -186,6 +187,13 @@ class Principal {
 		System.out.println();
 		System.out.println("Mostrando las cracteristicas del sensor con identificador " + sensorCCD.getCodigoSensor() + ":");
 		robot3.buscarSensor(sensorUltrasonido1.getCodigoSensor());
+		
+		// PRUEBAS DE BORRADO
+		System.out.println();
+		System.out.println("Borrando el sensor con identificador " + sensorCCD.getCodigoSensor() + " ...");
+		robot1.eliminarSensor(sensorCCD.getCodigoSensor());
+		System.out.println("Comprobando que se elimino correctamente:");
+		robot1.buscarSensor(sensorCCD.getCodigoSensor());
 	}
 
 }

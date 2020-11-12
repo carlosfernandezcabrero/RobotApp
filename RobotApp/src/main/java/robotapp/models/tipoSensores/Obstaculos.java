@@ -1,6 +1,6 @@
-package models.tipoSensores;
+package robotapp.models.tipoSensores;
 
-import models.Sensor;
+import robotapp.models.Sensor;
 
 public class Obstaculos extends Sensor {
 	
@@ -29,6 +29,11 @@ public class Obstaculos extends Sensor {
 
     public void setSensibilidadObstaculo(SensibilidadObstaculo sensibilidadObstaculo) {
         this.sensibilidad = sensibilidadObstaculo;
+    }
+    
+    public void printInfo(){
+    	super.printInfo();
+    	System.out.println("Sensibilidad: " + this.sensibilidad.getSensibilidad());
     }
     
     @Override

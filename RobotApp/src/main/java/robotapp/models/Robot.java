@@ -1,10 +1,10 @@
-package models;
+package robotapp.models;
 
-import exceptions.RequireUniqueDistanceSensor;
-import exceptions.RequireUniqueLDRSensor;
-import models.tipoSensores.Infrarrojos;
-import models.tipoSensores.LDR;
-import models.tipoSensores.Ultrasonido;
+import robotapp.exceptions.RequireUniqueDistanceSensor;
+import robotapp.exceptions.RequireUniqueLDRSensor;
+import robotapp.models.tipoSensores.Infrarrojos;
+import robotapp.models.tipoSensores.LDR;
+import robotapp.models.tipoSensores.Ultrasonido;
 
 import java.util.ArrayList;
 

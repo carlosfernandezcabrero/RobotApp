@@ -1,6 +1,6 @@
-package models.tipoSensores;
+package robotapp.models.tipoSensores;
 
-import models.Sensor;
+import robotapp.models.Sensor;
 
 public class Infrarrojos extends Sensor {
 
@@ -14,10 +14,15 @@ public class Infrarrojos extends Sensor {
         this.alcanceMinimo = alcanceMinimo;
     }
     
+    public void printInfo(){
+    	super.printInfo();
+    	System.out.println("Alcance minimo: " + this.alcanceMinimo + " cm");
+    }
+    
     @Override
 	public String toString() {
 		return super.toString() +
-				"			alcance minimo=" + alcanceMinimo + "\n" +
+				"			alcance minimo=" + alcanceMinimo + " cm\n" +
 				"		}\n";
 	}
     

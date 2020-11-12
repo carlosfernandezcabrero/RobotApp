@@ -1,4 +1,4 @@
-package exceptions;
+package robotapp.exceptions;
 
 public class RequireUniqueLDRSensor extends RuntimeException {
 

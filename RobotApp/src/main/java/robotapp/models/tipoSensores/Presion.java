@@ -1,6 +1,6 @@
-package models.tipoSensores;
+package robotapp.models.tipoSensores;
 
-import models.Sensor;
+import robotapp.models.Sensor;
 
 public class Presion extends Sensor {
 
@@ -14,10 +14,15 @@ public class Presion extends Sensor {
         this.deteccionMaxima = deteccionMaxima;
     }
     
+    public void printInfo(){
+    	super.printInfo();
+    	System.out.println("Deteccion maxima: " + this.deteccionMaxima + " N/mm2");
+    }
+    
     @Override
 	public String toString() {
 		return super.toString() +
-				"			deteccion maxima=" + deteccionMaxima + "\n" +
+				"			deteccion maxima=" + deteccionMaxima + " N/mm2\n" +
 				"		}\n";
 	}
 }

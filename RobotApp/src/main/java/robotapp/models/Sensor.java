@@ -1,4 +1,4 @@
-package models;
+package robotapp.models;
 
 public class Sensor {
 
@@ -9,13 +9,11 @@ public class Sensor {
     private double precio;
 
     public void printInfo(){
-
         System.out.println("Fabricante: " + this.getNombreFabricante());
         System.out.println("Código del Fabricante: " + this.getCodigoFabricante());
         System.out.println("Referencia del sensor: " + this.getCodigoSensor());
         System.out.println("Detalles: " + this.getDetalles());
         System.out.println("Precio: " + this.getPrecio());
-
     }
 
     public String getNombreFabricante() {

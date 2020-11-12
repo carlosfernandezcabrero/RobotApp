@@ -1,6 +1,6 @@
-package models.tipoSensores;
+package robotapp.models.tipoSensores;
 
-import models.Sensor;
+import robotapp.models.Sensor;
 
 public class Ultrasonido extends Sensor {
 
@@ -14,10 +14,15 @@ public class Ultrasonido extends Sensor {
         this.alcanceMaximo = alcanceMaximo;
     }
     
+    public void printInfo(){
+    	super.printInfo();
+    	System.out.println("Alcance maximo: " + this.alcanceMaximo + " m");
+    }
+    
     @Override
 	public String toString() {
 		return super.toString() +
-				"			alcance maximo=" + alcanceMaximo + "\n" +
+				"			alcance maximo=" + alcanceMaximo + " m\n" +
 				"		}\n";
 	}
 }
