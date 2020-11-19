@@ -6,10 +6,18 @@ public class Presion extends Sensor {
 
     private int deteccionMaxima;
 
+    /**
+     * Getter de deteccionMaxima
+     * @return int
+     */
     public int getDeteccionMaxima() {
         return deteccionMaxima;
     }
 
+    /**
+     * Setter
+     * @param deteccionMaxima
+     */
     public void setDeteccionMaxima(int deteccionMaxima) {
         this.deteccionMaxima = deteccionMaxima;
     }

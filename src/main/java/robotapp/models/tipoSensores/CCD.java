@@ -6,10 +6,18 @@ public class CCD extends Sensor {
 
     private int resolucionMaxima;
 
+    /**
+     * Getter de resolucionMaxima
+     * @return int
+     */
     public int getResolucionMaxima() {
         return resolucionMaxima;
     }
 
+    /**
+     * Setter
+     * @param resolucionMaxima
+     */
     public void setResolucionMaxima(int resolucionMaxima) {
         this.resolucionMaxima = resolucionMaxima;
     }

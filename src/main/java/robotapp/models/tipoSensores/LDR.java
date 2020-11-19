@@ -10,10 +10,18 @@ public class LDR extends Sensor {
 		
 		private final String sensibilidad;
 		
+		/**
+		 * Constructor
+		 * @param sensibilidad
+		 */
 		SensibilidadLDR(String sensibilidad){
 			this.sensibilidad = sensibilidad;
 		}
 		
+		/**
+		 * Getter de sensibilidad
+		 * @return String
+		 */
 		public String getSensibilidad() {
 			return this.sensibilidad;
 		}
@@ -21,10 +29,18 @@ public class LDR extends Sensor {
 
     private SensibilidadLDR sensibilidad;
 
+    /**
+     * Getter de sensibilidad
+     * @return SensibilidadLDR
+     */
     public SensibilidadLDR getSensibilidadLDR() {
         return this.sensibilidad;
     }
 
+    /**
+     * Setter
+     * @param sensibilidad
+     */
     public void setSensibilidadLDR(SensibilidadLDR sensibilidad) {
         this.sensibilidad = sensibilidad;
     }

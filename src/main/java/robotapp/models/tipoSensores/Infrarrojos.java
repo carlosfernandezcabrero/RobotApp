@@ -6,10 +6,18 @@ public class Infrarrojos extends Sensor {
 
     private int alcanceMinimo;
 
+    /**
+     * Getter de alcanceMaximo
+     * @return int
+     */
     public int getAlcanceMinimo() {
         return alcanceMinimo;
     }
 
+    /**
+     * Setter
+     * @param alcanceMinimo
+     */
     public void setAlcanceMinimo(int alcanceMinimo) {
         this.alcanceMinimo = alcanceMinimo;
     }

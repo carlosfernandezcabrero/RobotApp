@@ -11,10 +11,18 @@ public class Obstaculos extends Sensor {
 
 	    private String sensibilidad;
 
+	    /**
+	     * Constructor
+	     * @param sensibilidad
+	     */
 	    SensibilidadObstaculo(String sensibilidad){
 	        this.sensibilidad = sensibilidad;
 	    }
 
+	    /**
+	     * Getter de sensibilidad
+	     * @return String
+	     */
 		public String getSensibilidad() {
 			return sensibilidad;
 		}
@@ -23,10 +31,18 @@ public class Obstaculos extends Sensor {
 
     SensibilidadObstaculo sensibilidad;
 
+    /**
+     * Getter de sensibilidad
+     * @return SensibilidadObstaculo
+     */
     public SensibilidadObstaculo getSensibilidadObstaculo() {
         return sensibilidad;
     }
 
+    /**
+     * Setter
+     * @param sensibilidadObstaculo
+     */
     public void setSensibilidadObstaculo(SensibilidadObstaculo sensibilidadObstaculo) {
         this.sensibilidad = sensibilidadObstaculo;
     }

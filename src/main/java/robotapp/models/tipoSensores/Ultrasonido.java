@@ -6,10 +6,18 @@ public class Ultrasonido extends Sensor {
 
     private int alcanceMaximo;
 
+    /**
+     * Getter de alcanceMaximo
+     * @return int
+     */
     public int getAlcanceMaximo() {
         return alcanceMaximo;
     }
 
+    /**
+     * Setter
+     * @param alcanceMaximo
+     */
     public void setAlcanceMaximo(int alcanceMaximo) {
         this.alcanceMaximo = alcanceMaximo;
     }

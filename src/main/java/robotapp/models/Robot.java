@@ -14,10 +14,17 @@ public class Robot {
     private double precioVenta;
     private ArrayList<Sensor> listaSensores;
 
+    /**
+     * Constructor vacio
+     */
     public Robot(){
         listaSensores = new ArrayList<Sensor>();
     }
 
+    /**
+     * Metodo que agrega un sensor al robot
+     * @param sensor
+     */
     public void agregarSensor(Sensor sensor){
         for (Sensor i : listaSensores){
             if (sensor instanceof LDR && i instanceof LDR){
@@ -32,6 +39,10 @@ public class Robot {
         listaSensores.add(sensor);
     }
 
+    /**
+     * Metodo que busca un sensor en el robot
+     * @param codigoSensor
+     */
     public void buscarSensor(String codigoSensor){
     	boolean flag = false;
     	
@@ -48,6 +59,10 @@ public class Robot {
         }
     }
 
+    /**
+     * Metodo que elimina un sensor del robot
+     * @param codigoSensor
+     */
     public void eliminarSensor(String codigoSensor){
         int cont = 0;
 
@@ -60,12 +75,18 @@ public class Robot {
         }
     }
 
+    /**
+     * Metodo que lista los sensores del robot
+     */
     public void listarSensoresForEach(){
         for (Sensor i : listaSensores){
             System.out.println(i.toString());
         }
     }
 
+    /**
+     * Metodo que muestra los detalles de los sensores del robot
+     */
     public void precioVenta(){
         StringBuilder sb = new StringBuilder();
         int cont = 0;
@@ -80,14 +101,26 @@ public class Robot {
         System.out.println(sb);
     }
 
+    /**
+     * Getter de identificador
+     * @return String
+     */
     public String getIdentificador() {
         return identificador;
     }
 
+    /**
+     * Setter
+     * @param identificador
+     */
     public void setIdentificador(String identificador) {
         this.identificador = identificador;
     }
 
+    /**
+     * Getter de precioVenta
+     * @return double
+     */
     public double getPrecioVenta() {
         precioVenta = 0;
 

@@ -8,6 +8,10 @@ public class RequireUniqueDistanceSensor extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	private String codigoRobot;
 
+	/**
+	 * Constructor
+	 * @param codigoRobot
+	 */
     public RequireUniqueDistanceSensor(String codigoRobot){
         this.codigoRobot = codigoRobot;
     }

@@ -8,6 +8,10 @@ public class RequireUniqueLDRSensor extends RuntimeException {
 	private static final long serialVersionUID = 1L;
 	private String codigoSensor;
 
+	/**
+	 * Constructor
+	 * @param codigoSensor
+	 */
     public RequireUniqueLDRSensor(String codigoSensor){
         this.codigoSensor = codigoSensor;
     }
