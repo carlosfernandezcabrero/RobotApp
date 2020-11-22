@@ -28,11 +28,11 @@ public class Robot {
     public void agregarSensor(Sensor sensor){
         for (Sensor i : listaSensores){
             if (sensor instanceof LDR && i instanceof LDR){
-                throw new RequireUniqueLDRSensor(sensor.getCodigoSensor());
+                throw new RequireUniqueLDRSensor(this.getIdentificador());
             } else if (sensor instanceof Infrarrojos && i instanceof Ultrasonido){
-                throw new RequireUniqueDistanceSensor(sensor.getCodigoSensor());
+                throw new RequireUniqueDistanceSensor(this.getIdentificador(), "Infrarrojos");
             } else if (sensor instanceof Ultrasonido && i instanceof Infrarrojos){
-                throw new RequireUniqueDistanceSensor(sensor.getCodigoSensor());
+                throw new RequireUniqueDistanceSensor(this.getIdentificador(), "Ultrasonido");
             }
         }
         
