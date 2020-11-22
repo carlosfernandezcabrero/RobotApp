@@ -22,6 +22,7 @@ public class Presion extends Sensor {
         this.deteccionMaxima = deteccionMaxima;
     }
     
+    @Override
     public void printInfo(){
     	super.printInfo();
     	System.out.println("Deteccion maxima: " + this.deteccionMaxima + " N/mm2");
@@ -31,6 +32,6 @@ public class Presion extends Sensor {
 	public String toString() {
 		return super.toString() +
 				"			deteccion maxima=" + deteccionMaxima + " N/mm2\n" +
-				"		}\n";
+				"		}";
 	}
 }

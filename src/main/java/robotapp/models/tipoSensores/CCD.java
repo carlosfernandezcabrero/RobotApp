@@ -22,6 +22,7 @@ public class CCD extends Sensor {
         this.resolucionMaxima = resolucionMaxima;
     }
     
+    @Override
     public void printInfo(){
     	super.printInfo();
     	System.out.println("Resolucion maxima: " + this.resolucionMaxima + " ppp");
@@ -31,7 +32,7 @@ public class CCD extends Sensor {
 	public String toString() {
 		return super.toString() +
 				"			resolucion maxima=" + resolucionMaxima + " ppp\n" +
-				"		}\n";
+				"		}";
 	}
 
 }

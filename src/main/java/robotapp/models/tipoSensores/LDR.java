@@ -45,6 +45,7 @@ public class LDR extends Sensor {
         this.sensibilidad = sensibilidad;
     }
     
+    @Override
     public void printInfo(){
     	super.printInfo();
     	System.out.println("Sensibilidad: " + this.sensibilidad.getSensibilidad());
@@ -54,6 +55,6 @@ public class LDR extends Sensor {
 	public String toString() {
 		return super.toString() +
 				"			sensibilidad=" + sensibilidad.getSensibilidad() + "\n" +
-				"		}\n";
+				"		}";
 	}
 }

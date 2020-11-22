@@ -125,7 +125,7 @@ public class Robot {
         precioVenta = 0;
 
         for (Sensor i : listaSensores){
-            precioVenta += i.getPrecio();
+            precioVenta += i.getPrecioFabrica();
         }
 
         return Math.round((precioVenta * 1.85) * 100.0)/100.0;

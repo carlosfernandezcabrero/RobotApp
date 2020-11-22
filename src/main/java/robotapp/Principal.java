@@ -24,7 +24,7 @@ class Principal {
 		sensorCCD.setCodigoSensor("83001-S");
 		sensorCCD.setDescripcion("Sensor para la realización de capturas de imágenes");
 		sensorCCD.setNombreFabricante("Atlassian Sensores");
-		sensorCCD.setPrecio(10);
+		sensorCCD.setPrecioFabrica(10);
 		sensorCCD.setResolucionMaxima(200);
 		
 		Infrarrojos sensorInfrarrojos1 = new Infrarrojos();
@@ -32,7 +32,7 @@ class Principal {
 		sensorInfrarrojos1.setCodigoSensor("83002-S");
 		sensorInfrarrojos1.setDescripcion("Sensor para el cálculo de distancias cortas");
 		sensorInfrarrojos1.setNombreFabricante("Atlassian Sensores");
-		sensorInfrarrojos1.setPrecio(8);
+		sensorInfrarrojos1.setPrecioFabrica(8);
 		sensorInfrarrojos1.setAlcanceMinimo(100);
 		
 		Infrarrojos sensorInfrarrojos2 = new Infrarrojos();
@@ -40,7 +40,7 @@ class Principal {
 		sensorInfrarrojos2.setCodigoSensor("83006-S");
 		sensorInfrarrojos2.setDescripcion("Sensor para el cálculo de distancias cortas");
 		sensorInfrarrojos2.setNombreFabricante("Atlassian Sensores");
-		sensorInfrarrojos2.setPrecio(8);
+		sensorInfrarrojos2.setPrecioFabrica(8);
 		sensorInfrarrojos2.setAlcanceMinimo(100);
 		
 		LDR sensorLDR1 = new LDR();
@@ -48,7 +48,7 @@ class Principal {
 		sensorLDR1.setCodigoSensor("83003-S");
 		sensorLDR1.setDescripcion("Sensor para detectar si es de día o de noche y encender el sistema de iluminación del robot");
 		sensorLDR1.setNombreFabricante("Atlassian Sensores");
-		sensorLDR1.setPrecio(8);
+		sensorLDR1.setPrecioFabrica(8);
 		sensorLDR1.setSensibilidadLDR(SensibilidadLDR.ALTA);
 		
 		LDR sensorLDR2 = new LDR();
@@ -56,7 +56,7 @@ class Principal {
 		sensorLDR2.setCodigoSensor("83004-S");
 		sensorLDR2.setDescripcion("Sensor para detectar si es de día o de noche y encender el sistema de iluminación del robot");
 		sensorLDR2.setNombreFabricante("Atlassian Sensores");
-		sensorLDR2.setPrecio(8);
+		sensorLDR2.setPrecioFabrica(8);
 		sensorLDR2.setSensibilidadLDR(SensibilidadLDR.BAJA);
 		
 		Obstaculos sensorObstaculos = new Obstaculos();
@@ -64,7 +64,7 @@ class Principal {
 		sensorObstaculos.setCodigoSensor("83010-S");
 		sensorObstaculos.setDescripcion("Sensor para medidores de fuerza");
 		sensorObstaculos.setNombreFabricante("Atlassian Sensores");
-		sensorObstaculos.setPrecio(12);
+		sensorObstaculos.setPrecioFabrica(12);
 		sensorObstaculos.setSensibilidadObstaculo(SensibilidadObstaculo.MEDIA);
 		
 		Presion sensorPresion = new Presion();
@@ -72,7 +72,7 @@ class Principal {
 		sensorPresion.setCodigoSensor("83008-S");
 		sensorPresion.setDescripcion("Sensor para medidores de fuerza");
 		sensorPresion.setNombreFabricante("Atlassian Sensores");
-		sensorPresion.setPrecio(12);
+		sensorPresion.setPrecioFabrica(12);
 		sensorPresion.setDeteccionMaxima(200);
 		
 		Ultrasonido sensorUltrasonido1 = new Ultrasonido();
@@ -80,7 +80,7 @@ class Principal {
 		sensorUltrasonido1.setCodigoSensor("83005-S");
 		sensorUltrasonido1.setDescripcion("Sensor para calcular la distancia entre el robot y un objeto");
 		sensorUltrasonido1.setNombreFabricante("Atlassian Sensores");
-		sensorUltrasonido1.setPrecio(12);
+		sensorUltrasonido1.setPrecioFabrica(12);
 		sensorUltrasonido1.setAlcanceMaximo(900);
 		
 		Ultrasonido sensorUltrasonido2 = new Ultrasonido();
@@ -88,7 +88,7 @@ class Principal {
 		sensorUltrasonido2.setCodigoSensor("83007-S");
 		sensorUltrasonido2.setDescripcion("Sensor para calcular la distancia entre el robot y un objeto");
 		sensorUltrasonido2.setNombreFabricante("Atlassian Sensores");
-		sensorUltrasonido2.setPrecio(4);
+		sensorUltrasonido2.setPrecioFabrica(4);
 		sensorUltrasonido2.setAlcanceMaximo(1000);
 		
 		Robot robot1 = new Robot();

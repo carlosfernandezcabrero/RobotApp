@@ -22,6 +22,7 @@ public class Ultrasonido extends Sensor {
         this.alcanceMaximo = alcanceMaximo;
     }
     
+    @Override
     public void printInfo(){
     	super.printInfo();
     	System.out.println("Alcance maximo: " + this.alcanceMaximo + " m");
@@ -31,6 +32,6 @@ public class Ultrasonido extends Sensor {
 	public String toString() {
 		return super.toString() +
 				"			alcance maximo=" + alcanceMaximo + " m\n" +
-				"		}\n";
+				"		}";
 	}
 }

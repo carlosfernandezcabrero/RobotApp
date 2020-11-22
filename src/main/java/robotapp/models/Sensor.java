@@ -6,7 +6,7 @@ public class Sensor {
     private String codigoFabricante;
     private String codigoSensor;
     private String detalles;
-    private double precio;
+    private double precioFabrica;
 
     /**
      * Metodo que muestra los detalles del sensor
@@ -16,7 +16,7 @@ public class Sensor {
         System.out.println("Código del Fabricante: " + this.getCodigoFabricante());
         System.out.println("Referencia del sensor: " + this.getCodigoSensor());
         System.out.println("Detalles: " + this.getDetalles());
-        System.out.println("Precio: " + this.getPrecio());
+        System.out.println("Precio: " + this.getPrecioFabrica());
     }
 
     /**
@@ -84,28 +84,28 @@ public class Sensor {
     }
 
     /**
-     * Getter de precio
+     * Getter de precioFabrica
      * @return double
      */
-    public double getPrecio() {
-        return precio;
+    public double getPrecioFabrica() {
+        return precioFabrica;
     }
 
     /**
      * Setter
-     * @param precio
+     * @param precioFabrica
      */
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrecioFabrica(double precioFabrica) {
+        this.precioFabrica = precioFabrica;
     }
 
     @Override
     public String toString() {
         return "		Sensor{\n" +
-                "			nombre fabricante='" + nombreFabricante + "'\n" +
-                "			codigo fabricante='" + codigoFabricante + "'\n" +
-                "			codigo sensor='" + codigoSensor + "'\n" +
-                "			detalles='" + detalles + "'\n" +
-                "			precio=" + precio + "\n";
+                "			nombre fabricante='" + this.getNombreFabricante() + "'\n" +
+                "			codigo fabricante='" + this.getCodigoFabricante() + "'\n" +
+                "			codigo sensor='" + this.getCodigoSensor() + "'\n" +
+                "			detalles='" + this.getDetalles() + "'\n" +
+                "			precio de fabrica=" + this.getPrecioFabrica() + "\n";
     }
 }

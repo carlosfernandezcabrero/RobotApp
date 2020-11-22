@@ -47,6 +47,7 @@ public class Obstaculos extends Sensor {
         this.sensibilidad = sensibilidadObstaculo;
     }
     
+    @Override
     public void printInfo(){
     	super.printInfo();
     	System.out.println("Sensibilidad: " + this.sensibilidad.getSensibilidad());
@@ -56,7 +57,7 @@ public class Obstaculos extends Sensor {
 	public String toString() {
 		return super.toString() +
 				"			sensibilidad=" + sensibilidad.getSensibilidad() + "\n" +
-				"		}\n";
+				"		}";
 	}
 
 }

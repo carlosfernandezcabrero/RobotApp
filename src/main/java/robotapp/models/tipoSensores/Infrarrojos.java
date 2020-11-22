@@ -22,6 +22,7 @@ public class Infrarrojos extends Sensor {
         this.alcanceMinimo = alcanceMinimo;
     }
     
+    @Override
     public void printInfo(){
     	super.printInfo();
     	System.out.println("Alcance minimo: " + this.alcanceMinimo + " cm");
@@ -31,7 +32,7 @@ public class Infrarrojos extends Sensor {
 	public String toString() {
 		return super.toString() +
 				"			alcance minimo=" + alcanceMinimo + " cm\n" +
-				"		}\n";
+				"		}";
 	}
     
 }
